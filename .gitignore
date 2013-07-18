@@ -45,5 +45,14 @@ Thumbs.db
 
 .rvmrc
 
-# Ignore coverage reports
-coverage/
+/.bundle
+/vendor/bundle
+/log/*
+/tmp/*
+/db/*.sqlite3
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html
