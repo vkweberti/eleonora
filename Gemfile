@@ -29,7 +29,8 @@ group :assets do
   gem 'font-awesome-sass-rails'
 
   # For rails scaffold
-  gem 'twitter-bootstrap-rails', require: false
+  #gem 'twitter-bootstrap-rails', require: false
+  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
   gem 'uglifier', '>= 1.0.3'
 end
