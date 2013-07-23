@@ -18,6 +18,19 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyracer', :platforms => :ruby
   gem 'execjs'
+
+  # Speeds up your Rails 3 assets:precompile by only recompiling changed files
+  gem 'turbo-sprockets-rails3'
+
+  # Toolkit from Twitter designed to kickstart development of webapps and sites
+  gem 'bootstrap-sass'
+
+  # Font Awesome, SASS version, with assets pipeline, for Rails 3.1+
+  gem 'font-awesome-sass-rails'
+
+  # For rails scaffold
+  gem 'twitter-bootstrap-rails', require: false
+
   gem 'uglifier', '>= 1.0.3'
 end
 
