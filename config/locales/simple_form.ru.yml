@@ -2,6 +2,15 @@ ru:
   simple_form:
     "yes": 'Yes'
     "no": 'No'
+    labels:
+      product:
+        title: 'Название'
+        description: 'Описание'
+        price: 'Цена'
+        size: 'Размер'
+        care: 'Рекоммендации по уходу'
+        make: 'Производство'
+        material: 'Материал'
     required:
       text: 'required'
       mark: '*'
