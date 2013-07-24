@@ -1,21 +1,26 @@
-<h1>Listing products</h1>
+<h1><%= I18n.t('product.products_list') %></h1>
 
-<table>
+<table class="table">
   <tr>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><%= I18n.t('product.title') %></th>
+    <th><%= I18n.t('product.size') %></th>
+    <th><%= I18n.t('product.price') %></th>
+    <th><%= I18n.t('actions.actions') %></th>
   </tr>
 
 <% @products.each do |product| %>
   <tr>
-    <td><%= link_to 'Show', product %></td>
-    <td><%= link_to 'Edit', edit_product_path(product) %></td>
-    <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to product.title, product %></td>
+    <td><%= product.size %></td>
+    <td><%= product.price %></td>
+    <td>
+      <%= link_to I18n.t('actions.edit'), edit_product_path(product) %> |
+      <%= link_to I18n.t('actions.delete'), product, method: :delete, data: { confirm: I18n.t('actions.confirm') } %>
+    </td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Product', new_product_path %>
+<%= link_to I18n.t('actions.add'), new_product_path %>

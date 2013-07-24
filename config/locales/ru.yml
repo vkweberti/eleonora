@@ -2,4 +2,25 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 ru:
-  hello: "Привет"
+  actions:
+
+    add: 'Добавить'
+    delete: 'Удалить'
+    edit: 'Редактировать'
+    editing: 'Редактирование'
+    update: 'Обновить'
+    save: 'Сохранить'
+    show: 'Просмотр'
+    back: 'Назад'
+    actions: 'Действия'
+    confirm: 'Вы уверенны?'
+  product:
+    new_product: 'Новый товар'
+    title: 'Название'
+    description: 'Описание'
+    price: 'Цена'
+    size: 'Размер'
+    care: 'Рекоммендации по уходу'
+    make: 'Производство'
+    material: 'Материал'
+    products_list: 'Список товаров'

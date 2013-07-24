@@ -1,5 +1,35 @@
+<h1><%= @product.title %></h1>
 <p id="notice"><%= notice %></p>
 
+<div>
+  <h4><%= I18n.t('product.description') + ":" %></h4>
+  <div class="desc"><%= @product.description %></div>
+</div>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<div>
+  <h4><%= I18n.t('product.price') + ":" %></h4>
+  <div class="price"><%= @product.price %></div>
+</div>
+
+<div>
+  <h4><%= I18n.t('product.size') + ":" %></h4>
+  <div class="size"><%= @product.size %></div>
+</div>
+
+<div>
+  <h4><%= I18n.t('product.care') + ":" %></h4>
+  <div class="care"><%= @product.care %></div>
+</div>
+
+<div>
+  <h4><%= I18n.t('product.make') + ":" %></h4>
+  <div class="make"><%= @product.make %></div>
+</div>
+
+<div>
+  <h4><%= I18n.t('product.material') + ":" %></h4>
+  <div class="material"><%= @product.material %></div>
+</div>
+
+<%= link_to I18n.t('actions.edit'), edit_product_path(@product) %> |
+<%= link_to I18n.t('actions.back'), products_path %>
