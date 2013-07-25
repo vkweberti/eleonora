@@ -40,8 +40,10 @@ capybara-*.html
 Thumbs.db
 
 # Ignore IDEA configs
-.idea
+.idea/
 .directory
+
+.idea/workspace.xml
 
 .rvmrc
 

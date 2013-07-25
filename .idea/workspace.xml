@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea2a3b90-f84c-44c7-9ac3-0d0b79472b6a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <file path="/database.yml" changelist="ea2a3b90-f84c-44c7-9ac3-0d0b79472b6a" time="1373515579965" ignored="false" />
     <file path="/Gemfile" changelist="ea2a3b90-f84c-44c7-9ac3-0d0b79472b6a" time="1374584896866" ignored="false" />
-    <file path="/Dummy.txt" changelist="ea2a3b90-f84c-44c7-9ac3-0d0b79472b6a" time="1374724745041" ignored="false" />
+    <file path="/Dummy.txt" changelist="ea2a3b90-f84c-44c7-9ac3-0d0b79472b6a" time="1374726249629" ignored="false" />
     <file path="$PROJECT_DIR$/../hintarea/config/routes.rb" changelist="ea2a3b90-f84c-44c7-9ac3-0d0b79472b6a" time="1374568323025" ignored="false" />
     <file path="$PROJECT_DIR$/../hintarea/app/views/layouts/application.html.slim" changelist="ea2a3b90-f84c-44c7-9ac3-0d0b79472b6a" time="1374584714462" ignored="false" />
     <file path="$PROJECT_DIR$/../hintarea/app/assets/stylesheets/special/hintarea_site/main.scss" changelist="ea2a3b90-f84c-44c7-9ac3-0d0b79472b6a" time="1374566771232" ignored="false" />
@@ -114,7 +114,7 @@
       <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="5" selection-start="830" selection-end="830" vertical-scroll-proportion="0.34237996">
+            <state line="42" column="6" selection-start="831" selection-end="831" vertical-scroll-proportion="0.79749477">
               <folding />
             </state>
           </provider>
@@ -199,6 +199,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -407,20 +408,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -765,7 +765,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29674795" sideWeight="0.61238533" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30243903" sideWeight="0.61238533" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35529158" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32829374" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -937,7 +937,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="5" selection-start="830" selection-end="830" vertical-scroll-proportion="0.34237996">
+        <state line="42" column="6" selection-start="831" selection-end="831" vertical-scroll-proportion="0.79749477">
           <folding />
         </state>
       </provider>
