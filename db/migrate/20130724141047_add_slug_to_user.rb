@@ -5,7 +5,7 @@ class AddSlugToUser < ActiveRecord::Migration
   end
 
   def down
-    remove_column :products, :slug
     remove_index :products, :slug
+    remove_column :products, :slug
   end
 end
