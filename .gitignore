@@ -40,21 +40,10 @@ capybara-*.html
 Thumbs.db
 
 # Ignore IDEA configs
-.idea/
+/.idea
 .directory
-
-.idea/workspace.xml
 
 .rvmrc
 
-/.bundle
-/vendor/bundle
-/log/*
-/tmp/*
-/db/*.sqlite3
-/public/system/*
-/coverage/
-/spec/tmp/*
-**.orig
-rerun.txt
-pickle-email-*.html
+# Ignore coverage reports
+coverage/
