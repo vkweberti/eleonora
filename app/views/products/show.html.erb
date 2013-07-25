@@ -1,6 +1,12 @@
 <h1><%= @product.title %></h1>
 <p id="notice"><%= notice %></p>
 
+<% unless @product.images.empty? %>
+  <% @product.images.each do |image| %>
+    <%= image_tag image.file.url, {size: "100x100"} %>
+  <% end %>
+<% end %>
+
 <div>
   <h4><%= I18n.t('product.description') + ":" %></h4>
   <div class="desc"><%= @product.description %></div>
