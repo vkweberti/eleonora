@@ -1,6 +1,18 @@
 .container {
   .row {
     margin-top: 50px;
+
+    .span9, .span3 {
+      float: right;
+    }
+
+    .span3 {
+      width: 200px;
+    }
+
+    .span9 {
+      width: 940px;
+    }
   }
 }
 
