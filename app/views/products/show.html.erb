@@ -1,41 +1,55 @@
-<h1><%= @product.title %></h1>
-<p id="notice"><%= notice %></p>
-
-<% unless @product.images.empty? %>
-  <% @product.images.each do |image| %>
-    <%= image_tag image.file.url(:thumb) %>
-  <% end %>
+<%= content_for :scripts do %>
+  <%= javascript_include_tag 'product/product' %>
 <% end %>
 
-<div>
-  <h4><%= I18n.t('product.description') + ":" %></h4>
-  <div class="desc"><%= @product.description %></div>
-</div>
+<div class="product">
+  <h1><%= @product.title %></h1>
+  <p id="notice"><%= notice %></p>
 
-<div>
-  <h4><%= I18n.t('product.price') + ":" %></h4>
-  <div class="price"><%= @product.price %></div>
-</div>
+  <% unless @product.images.empty? %>
+    <div class="image">
+      <% @product.images.each do |image| %>
+        <%= image_tag image.file.url(:thumb), {
+            class: 'foto',
+            data: {
+                large: image.file.url,
+                help: 'Используйте колесико мыши для Zoom +/-',
+            }
+        } %>
+      <% end %>
+    </div>
+  <% end %>
 
-<div>
-  <h4><%= I18n.t('product.size') + ":" %></h4>
-  <div class="size"><%= @product.size %></div>
-</div>
+  <div>
+    <h4><%= I18n.t('product.description') + ":" %></h4>
+    <div class="desc"><%= @product.description %></div>
+  </div>
 
-<div>
-  <h4><%= I18n.t('product.care') + ":" %></h4>
-  <div class="care"><%= @product.care %></div>
-</div>
+  <div>
+    <h4><%= I18n.t('product.price') + ":" %></h4>
+    <div class="price"><%= @product.price %></div>
+  </div>
 
-<div>
-  <h4><%= I18n.t('product.make') + ":" %></h4>
-  <div class="make"><%= @product.make %></div>
-</div>
+  <div>
+    <h4><%= I18n.t('product.size') + ":" %></h4>
+    <div class="size"><%= @product.size %></div>
+  </div>
 
-<div>
-  <h4><%= I18n.t('product.material') + ":" %></h4>
-  <div class="material"><%= @product.material %></div>
-</div>
+  <div>
+    <h4><%= I18n.t('product.care') + ":" %></h4>
+    <div class="care"><%= @product.care %></div>
+  </div>
 
-<%= link_to I18n.t('actions.edit'), edit_product_path(@product) %> |
-<%= link_to I18n.t('actions.back'), products_path %>
+  <div>
+    <h4><%= I18n.t('product.make') + ":" %></h4>
+    <div class="make"><%= @product.make %></div>
+  </div>
+
+  <div>
+    <h4><%= I18n.t('product.material') + ":" %></h4>
+    <div class="material"><%= @product.material %></div>
+  </div>
+
+  <%= link_to I18n.t('actions.edit'), edit_product_path(@product) %> |
+  <%= link_to I18n.t('actions.back'), products_path %>
+</div>
