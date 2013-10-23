@@ -3,7 +3,6 @@
 
 ru:
   actions:
-
     add: 'Добавить'
     delete: 'Удалить'
     edit: 'Редактировать'
@@ -14,6 +13,7 @@ ru:
     back: 'Назад'
     actions: 'Действия'
     confirm: 'Вы уверенны?'
+
   product:
     new_product: 'Новый товар'
     title: 'Название'
@@ -24,3 +24,4 @@ ru:
     make: 'Производство'
     material: 'Материал'
     products_list: 'Список товаров'
+    zoom_hint: 'Используйте колесико мыши для Zoom +/-'
