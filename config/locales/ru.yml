@@ -25,3 +25,6 @@ ru:
     material: 'Материал'
     products_list: 'Список товаров'
     zoom_hint: 'Используйте колесико мыши для Zoom +/-'
+    form:
+      add_image: 'Добавить изображение'
+      remove_image: 'Удалить изображение'

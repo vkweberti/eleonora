@@ -21,14 +21,16 @@
   <%= f.input :make, as: :string %>
   <%= f.input :material, as: :string %>
 
-
-
   <div id="images">
     <%= f.simple_fields_for :images do |i| %>
+        <% if i.object.id  %>
+            <%= image_tag i.object.file.url(:thumb) %>
+        <% end %>
         <%= i.file_field :file %>
+        <%= i.link_to_remove t('product.form.remove_image') %>
     <% end %>
   </div>
-  <%= f.link_to_add "Add attachment", :images %>
+  <%= f.link_to_add t('product.form.add_image'), :images %>
 
 
   <div class="actions">
