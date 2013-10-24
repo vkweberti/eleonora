@@ -1,18 +1,42 @@
+html, body {
+  height: 100%;
+}
+
 .container {
-  .row {
+  min-height: 100%;
+
+  .content {
+    padding-bottom: 80px;
     margin-top: 50px;
 
-    .span9, .span3 {
-      float: right;
-    }
+    .row {
+      margin-top: 50px;
 
-    .span3 {
-      width: 200px;
-    }
+      .span9, .span3 {
+        float: right;
+      }
 
-    .span9 {
-      width: 940px;
+      .span3 {
+        width: 200px;
+      }
+
+      .span9 {
+        width: 940px;
+      }
     }
+  }
+}
+
+.main-footer {
+  background: #fff;
+  margin-top: -60px;
+  height: 60px;
+  padding: 0;
+
+  .container.footer {
+    border-top: 1px solid #cccccc;
+    padding: 0 10px;
+    min-height: 0;
   }
 }
 
