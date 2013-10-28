@@ -6,4 +6,12 @@ $(document).ready(function(){
     scrollspeedanimate: 10,
     loopspeedanimate: 5
   });
+
+    $(".product .mini img").click(function(){
+        $(".product .foto").attr({
+            src: $(this).attr('data-thumb'),
+            "data-large": $(this).attr('data-large')
+        });
+    });
+
 });

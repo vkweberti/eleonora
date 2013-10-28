@@ -8,15 +8,19 @@
 
   <% unless @product.images.empty? %>
     <div class="image">
-      <% @product.images.each do |image| %>
-        <%= image_tag image.file.url(:thumb), {
-            class: 'foto',
-            data: {
-                large: image.file.url,
-                help: I18n.t('product.zoom_hint'),
-            }
-        } %>
-      <% end %>
+      <%= image_tag @product.images.first.file.url(:thumb), {
+              class: 'foto',
+              data: {
+                      large: @product.images.first.file.url,
+                      help: I18n.t('product.zoom_hint'),
+              }
+      } %>
+
+      <div class="mini">
+        <% @product.images.each do |image| %>
+          <%= image_tag image.file.url(:mini), data: { thumb: image.file.url(:thumb), large: image.file.url } %>
+        <% end %>
+      </div>
     </div>
   <% end %>
 
